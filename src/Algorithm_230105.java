@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 /**
  * https://school.programmers.co.kr/learn/courses/30/lessons/135808
- * 과일 장수
+ * 과일 장수 (Lv.1)
  */
 public class Algorithm_230105 {
 
