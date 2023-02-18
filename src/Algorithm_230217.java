@@ -11,7 +11,7 @@ public class Algorithm_230217 {
     }
 
     // 한 번 출발 시 마다, 가장 먼 배달지부터 delivery와 pickup을 cap 만큼 빼면서,
-    //    가장 먼 거리 * 2를 더해주면 된다
+    // 가장 먼 거리 * 2를 더해주면 된다
     public static long solution(int cap, int n, int[] deliveries, int[] pickups) {
         // 1. 총 배달 및 수거 개수를 카운팅
         int totalD = 0;
@@ -23,7 +23,7 @@ public class Algorithm_230217 {
 
         // 2. 배달 및 수거가 완료되면 종료
         long answer = 0;
-        int d = n - 1;
+        int d = n - 1; // 배열 최대 인덱스 수치로 초기화
         int p = n - 1;
 
         while (totalD != 0 || totalP != 0) {
