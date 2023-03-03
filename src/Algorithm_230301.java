@@ -64,7 +64,7 @@ public class Algorithm_230301 {
                 // 정리시간 10분
                 int endTime = endTimeList.get(i) + 10;
                 // check
-                if (book.start_time >= endTime) {
+                if (book.start_time >= endTime) { // 쓸 수 있는 방의 끝나는 시간을 업데이트 함, 고로 array의 size가 방 갯수
                     // 예약 시간 넣고 업데이트
                     endTimeList.set(i, book.end_time);
                     isOk = true;
