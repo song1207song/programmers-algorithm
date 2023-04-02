@@ -1,0 +1,29 @@
+/**
+ * SQL 문제
+ *
+ * 문제 요약 : 3개의 테이블을 이용하여 조건에 맞는 주어진 결과값 도출해내기
+ *
+ *
+ * SELECT UP.USER_ID, UP.PURCHASE_COUNT, IFNULL(CP.TOTAL_PRICE, 0) AS 'TOTAL_PRICE'
+ *
+ * FROM (
+ *     SELECT U.ID AS 'USER_ID', IFNULL(COUNT(P.USER_ID), 0) AS 'PURCHASE_COUNT'
+ *     FROM GAME_USERS U
+ *     LEFT OUTER JOIN PURCHASES P
+ *     ON U.ID = P.USER_ID
+ *     GROUP BY U.ID
+ * ) UP
+ *
+ * LEFT OUTER JOIN (
+ *     SELECT P.USER_ID, SUM(PRICE) AS 'TOTAL_PRICE'
+ *     FROM CHARACTERS C
+ *     INNER JOIN PURCHASES P
+ *     ON C.NAME = P.ITEM
+ *     GROUP BY P.USER_ID
+ * ) CP
+ *
+ * ON UP.USER_ID=CP.USER_ID
+ * GROUP BY UP.USER_ID
+ * ORDER BY UP.USER_ID
+ *
+ */
