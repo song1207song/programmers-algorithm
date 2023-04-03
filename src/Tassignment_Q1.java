@@ -1,7 +1,7 @@
 /**
  * 문제 요약 : 2차원배열로 주어진 자리 배열에서 온풍기를 설치 했을 때 가장 사람이 많이 따뜻해지는 사람 수
  */
-public class Tving_Q1 {
+public class Tassignment_Q1 {
     public static void main(String[] args) {
         int[][] office = {};
 

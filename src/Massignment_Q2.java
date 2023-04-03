@@ -5,7 +5,7 @@ import java.io.InputStreamReader;
  * 문제 요약 : 배열과 인덱스가 같은 값 출력
  * 조건 : O(logN) 복잡도로 구현하기
  */
-public class MyRealTrip_Q2 {
+public class Massignment_Q2 {
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String input = br.readLine();
