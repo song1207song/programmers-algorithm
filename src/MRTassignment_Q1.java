@@ -1,10 +1,11 @@
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.List;
 
 /**
  * 문제요약 : 같은 문자 사이 가장 큰 substring 사이즈르 구하시오
  */
-public class Myassignment_Q1 {
+public class MRTassignment_Q1 {
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String input = br.readLine();
