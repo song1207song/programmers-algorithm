@@ -1,7 +1,7 @@
 /**
  * 문제 요약 : 3의 제곱수 조합으로 만들 수 있는 수치를 오름차순 정렬했을 때 n 번째 숫자는 무엇인가
  */
-public class Tassignment_Q2 {
+public class Algorithm_T2 {
     public static void main(String[] args) {
 
         System.out.println(solution(4));

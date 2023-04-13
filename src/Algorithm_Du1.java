@@ -3,7 +3,7 @@ import java.io.InputStreamReader;
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class DUassignment_Q1 {
+public class Algorithm_Du1 {
     private static List<Sentence> sentences = new ArrayList<>();
 
     public static void main(String[] args) throws Exception {
