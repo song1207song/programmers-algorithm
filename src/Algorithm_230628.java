@@ -28,12 +28,13 @@ class Algorithm_230628 {
                 storage.add(new Storage(startIdx, endIdx));
             }
 
-            if (sum <= k && endIdx < len) { // 같거나 작으면 endIdx를 늘리는 방향으로
+            if (sum < k && endIdx < len) { // 작으면 endIdx를 늘리는 방향으로
                 endIdx++;
 
                 if (endIdx < len) sum += sequence[endIdx];
 
-            } else { // 값이 커지면 startIdx를 옮김
+            } else { // 값이 같거나 커지면 startIdx를 옮김,
+                // 같은 이유를 체크하는 이유는 같을 경우 위에서 값을 킵할 것이고 더 긴 조건을 체크할 필요가 없기 때문에 다음 startIdx로 넘어가기 위함
                 if (startIdx < len) {
                     sum -= sequence[startIdx];
                 }
